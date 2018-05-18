@@ -114,6 +114,10 @@ Once there, just copy and paste the command that is displayed in the box "step 3
 This token allows the VC3 system to SSH into a cluster as yourself and submit
 jobs on your, or your project’s, behalf.
 
+Once the ssh key has been placed in the resource, click on button "validate" (step 4).
+You will notice the progress bar at the top changes color to green with a message "Ready"
+when VC3 has complete the validation. Now the allocation is ready to be used. 
+
 ## Defining a Project
 
 VC3, as a platform for cooperative scientific computing, allows you create
@@ -124,12 +128,15 @@ your group, laboratory, or collaboration. To start a new project, click
 ![step6](../img/07_project_list.png)
 
 You may give your project an arbitrary name and choose initial project members.
+You are, by default, member of all your projects.
 Once finished, click “Create Project”.
 
 ![step6a](../img/08_project_create.png)
 
 You should be returned to the Projects page, where you will be able to see all
 of your projects and memberships.
+You can access the configuration of each project in the table by clicking on its name.
+This way you can add or remove members and/or allocations to a given project.
 
 ![step6b](../img/09_project_ready.png)
 
@@ -141,11 +148,29 @@ number of head nodes, worker nodes, etc.
 VC3 currently supports HTCondor and WorkQueue clusters with dynamic worker nodes,
 and fixed head nodes.
 
-To define a new template, click the “Cluster Templates” link on the left panel.
+To define a new template, click the “Cluster Templates” link on the left panel, 
+and then click the "+New Cluster Template" button. 
 You’ll be able to give your cluster a name, select framework, and number of
 workers. Click “Define Cluster Template” to finish creating the template.
 
+You should be returned to the Cluster Templates page, where you will be able to see all of your templates.
+You can access the configuration of each cluster template in the table by clicking on its name.
+
+
 ![step7](../img/11_cluster_create.png)
+
+## Environments
+
+An Enviroment is a collection of software packages to be included in a virtual cluster. 
+Click on "+New Environment" to create new ones. 
+From the "PACKAGE LIST" menu you can select one or more packages to be included in your new Enviroment.
+
+From the second menu you can choose, if needed, the Operative System. 
+
+Once done, click on "Create New Enviroment" button.
+You should be returned to the Enviroments page, where you will be able to see all of your environments.
+You can access the configuration of each environment in the table by clicking on its name.
+
 
 ## Resources
 
@@ -156,10 +181,27 @@ resources by clicking the “Resources” link on the left panel.
 You can also click an individual resource and see expanded information, such as
 batch system type, links to documentation, etc.
 
+
+
 ## Launching a Virtual Cluster
 
 Now that you have created a Project and associated at least one allocation to it,
 you are ready to create and launch your clusters.
+
+Click on "New Virtual Cluster" to create a new one. 
+Follow the steps. 
+First select a project from the menu and click "Next".
+Select a name for your new Virtual Cluster. Only letters, numbers, dashes and underscores are valid characters for the name of the cluster.
+
+Select a Cluster Template from the menu.
+
+Select an Enviroment. 
+
+Select the Allocations you want to be used in this cluster. 
+
+Finally select an expiration time for your cluster. Default value is 2 hours. 
+
+When ready, click on "Launch Virtual Cluster"
 
 ![step9](../img/12_vc_list.png)
 ![step9a](../img/13_vc_create.png)
