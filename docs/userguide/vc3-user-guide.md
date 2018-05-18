@@ -159,8 +159,16 @@ batch system type, links to documentation, etc.
 ## Launching a Virtual Cluster
 
 Now that you have created a Project and associated at least one allocation to it,
-you are ready to create and launch your clusters.
+you are ready to create and launch your cluster.
+
+Click on the "New Virtual Cluster" button to start creating your new cluster.
 
 ![step9](../img/12_vc_list.png)
+
+You can then select the cluster template, environment (optional), project and allocation. Every user in your project will be able to log in to your virtual cluster submit node.
+
 ![step9a](../img/13_vc_create.png)
+
+After you have created your new virtual cluster, you will se in the list (as shown below), with the current state. You can click on the "Virtual Cluster States" information menu to see a diagram with the meaning of each state.
+
 ![step9b](../img/14_vc_ready.png)
