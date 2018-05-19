@@ -165,7 +165,13 @@ An Enviroment is a collection of software packages to be included in a virtual c
 Click on "+New Environment" to create new ones. 
 From the "PACKAGE LIST" menu you can select one or more packages to be included in your new Enviroment.
 
-From the second menu you can choose, if needed, the Operative System. 
+From the second menu you can choose, if needed, the Operative System. If the chosen Operative System
+is not available natively, the system will attempt to provide it via containers.
+Please, look into the [resources page](https://www.virtualclusters.org/resource) to check if the
+resource you are planning to use with this environment has container options available in the 
+"features" section (E.g: singularity).
+
+![step8](../img/15_env1.png)
 
 Once done, click on "Create New Enviroment" button.
 You should be returned to the Enviroments page, where you will be able to see all of your environments.
@@ -180,7 +186,6 @@ resources by clicking the “Resources” link on the left panel.
 
 You can also click an individual resource and see expanded information, such as
 batch system type, links to documentation, etc.
-
 
 
 ## Launching a Virtual Cluster
