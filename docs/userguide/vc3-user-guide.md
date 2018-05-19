@@ -59,7 +59,7 @@ After your account is verified, you will be presented with the page below. Click
 
 ![step3b3](../img/screenshot_275e.png)
 
-## Complete or update your VC3 profile
+### 4. Complete or update your VC3 profile
 
 Once you have signed in, you’ll be asked to update or complete your VC3 profile
 with information such as your Institution and any other data we cannot
@@ -77,7 +77,7 @@ instructions to create it can be found in the link at the top-right corner.
 
 ![step4](../img/01_profile_edit.png)
 
-## Connect an Allocation
+### 5. Connect an Allocation
 
 After updating your profile, you can connect an allocation to the VC3 service.
 An allocation, in VC3, is defined as combination of a username and resource
@@ -118,7 +118,7 @@ Once the ssh key has been placed in the resource, click on button "validate" (st
 You will notice the progress bar at the top changes color to green with a message "Ready"
 when VC3 has complete the validation. Now the allocation is ready to be used. 
 
-## Defining a Project
+### 6. Defining a Project
 
 VC3, as a platform for cooperative scientific computing, allows you create
 projects to share your allocations and virtual clusters with trusted members of
@@ -140,7 +140,7 @@ This way you can add or remove members and/or allocations to a given project.
 
 ![step6b](../img/09_project_ready.png)
 
-## Creating a Cluster Template
+### 7. Creating a Cluster Template
 
 VC3 allows users to create “Cluster Templates” that describe the components of
 their virtual cluster, including the type of cluster, 
@@ -159,7 +159,7 @@ You can access the configuration of each cluster template in the table by clicki
 
 ![step7](../img/11_cluster_create.png)
 
-## Environments
+### 8. Environments
 
 An Enviroment is a collection of software packages to be included in a virtual cluster. 
 Click on "+New Environment" to create new ones. 
@@ -178,7 +178,7 @@ You should be returned to the Enviroments page, where you will be able to see al
 You can access the configuration of each environment in the table by clicking on its name.
 
 
-## Resources
+### 9. Resources
 
 The VC3 team curates an ever-expanding list of resources for end-users, with a
 focus on Campus Clusters, HPC centers, and Cloud resources. You can find these
@@ -188,7 +188,7 @@ You can also click an individual resource and see expanded information, such as
 batch system type, links to documentation, etc.
 
 
-## Launching a Virtual Cluster
+### 10. Launching a Virtual Cluster
 
 Now that you have created a Project and associated at least one allocation to it,
 you are ready to create and launch your cluster.
