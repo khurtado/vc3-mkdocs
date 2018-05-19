@@ -26,9 +26,9 @@ this will take you to a [Globus](https://globus.org) sign-in site.
 
 You will then be asked to sign in with your institutional identity, or your
 Globus ID. If you are using the former, simply type in the name of your
-institution and click "Continue". Proceed to [Step 3a](###3a.-Login-with-your-institutional-ID).
+institution and click "Continue". Proceed to [Step 3a](#3a-login-with-your-institutional-id).
 
-Otherwise, click "Globus ID to sign in" and proceed to the alternate Step 3b.
+Otherwise, click "Globus ID to sign in" and proceed to the alternate [Step 3b](#3b-login-with-your-globus-id).
 
 ![step2](../img/screenshot_273.png)
 
@@ -37,7 +37,7 @@ Otherwise, click "Globus ID to sign in" and proceed to the alternate Step 3b.
 You should be presented with a login page for your institutional ID, with your
 institution’s branding. Go ahead and sign-in now. 
 **Note that your password is not sent to the VC3 or Globus web portals**. 
-Continue to step 4.
+Continue to [step 4](#4-complete-or-update-your-vc3-profile).
 
 ![step3a](../img/screenshot_275.png)
 
