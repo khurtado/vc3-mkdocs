@@ -65,9 +65,6 @@
                     <li >
                         <a href="../../glossary/">Glossary</a>
                     </li>
-                    <li >
-                        <a href="../../mkcommands/">MK Docs Cheatsheet</a>
-                    </li>
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -99,16 +96,17 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#vc3-user-guide">VC3 User Guide</a></li>
             <li><a href="#building-your-first-virtual-cluster">Building Your First Virtual Cluster</a></li>
-            <li><a href="#login-or-create-account">Login or Create Account</a></li>
-            <li><a href="#sign-in-to-globus">Sign in to Globus</a></li>
-            <li><a href="#login-with-your-institutional-id">Login with your institutional ID</a></li>
-            <li><a href="#login-with-your-globus-id">Login with your Globus ID</a></li>
-            <li><a href="#complete-or-update-your-vc3-profile">Complete or update your VC3 profile</a></li>
-            <li><a href="#connect-an-allocation">Connect an Allocation</a></li>
-            <li><a href="#defining-a-project">Defining a Project</a></li>
-            <li><a href="#creating-a-cluster-template">Creating a Cluster Template</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#launching-a-virtual-cluster">Launching a Virtual Cluster</a></li>
+            <li><a href="#1-login-or-create-account">1. Login or Create Account</a></li>
+            <li><a href="#2-sign-in-to-globus">2. Sign in to Globus</a></li>
+            <li><a href="#3a-login-with-your-institutional-id">3a. Login with your institutional ID</a></li>
+            <li><a href="#3b-login-with-your-globus-id">3b. Login with your Globus ID</a></li>
+            <li><a href="#4-complete-or-update-your-vc3-profile">4. Complete or update your VC3 profile</a></li>
+            <li><a href="#5-connect-an-allocation">5. Connect an Allocation</a></li>
+            <li><a href="#6-defining-a-project">6. Defining a Project</a></li>
+            <li><a href="#7-creating-a-cluster-template">7. Creating a Cluster Template</a></li>
+            <li><a href="#8-environments">8. Environments</a></li>
+            <li><a href="#9-resources">9. Resources</a></li>
+            <li><a href="#10-launching-a-virtual-cluster">10. Launching a Virtual Cluster</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -116,98 +114,145 @@
 <h1 id="vc3-user-guide">VC3 User Guide</h1>
 <h3 id="building-your-first-virtual-cluster">Building Your First Virtual Cluster</h3>
 <p><strong>Prerequisites</strong></p>
-<p>In order to use VC3, you’ll need an allocation or account with with a supported target resource. These include, but are not limited to:</p>
+<p>In order to use VC3, you’ll need an allocation or account in a target resource that is supported by VC3. These include, but are not limited to:</p>
 <ul>
 <li>University of Chicago - Research Computing Center</li>
 <li>University of Notre Dame - Center for Research Computing</li>
-<li>Brookhaven National Laboratory - Scientific Data &amp; Computing Center</li>
-<li>Syracuse University - Research Computing</li>
-<li>Texas Advanced Computing Center</li>
-<li>NERSC</li>
-<li>Amazon Web Services</li>
+<li>National Energy Research Scientific Computing Center (NERSC)</li>
+<li>Pittsburgh Supercomputing Center (Bridges)</li>
 <li>Open Science Grid</li>
 <li>and more!</li>
 </ul>
-<p>Institutions and resources are added frequently - be sure to subscribe to our
-newsletter and visit <a href="https://www.virtualclusters.org/community">Virtual Clusters</a>!</p>
-<h3 id="login-or-create-account">Login or Create Account</h3>
+<p>Institutions and resources are added frequently. Check the <a href="https://www.virtualclusters.org/resources">Resources</a> page for the full list of connected resources in the service.</p>
+<h3 id="1-login-or-create-account">1. Login or Create Account</h3>
 <p>When you first visit <a href="https://www.virtualclusters.org">Virtual Clusters</a>, you’ll
 be presented with a Login link in the top right of the screen. Click “Login” -
 this will take you to a <a href="https://globus.org">Globus</a> sign-in site.</p>
 <p><img alt="step1" src="../../img/screenshot_272.png" /></p>
-<h3 id="sign-in-to-globus">Sign in to Globus</h3>
+<h3 id="2-sign-in-to-globus">2. Sign in to Globus</h3>
 <p>You will then be asked to sign in with your institutional identity, or your
 Globus ID. If you are using the former, simply type in the name of your
-institution and click “Continue”. Proceed to Step 3a.</p>
-<p>Otherwise, click “Sign in with Globus ID” and proceed to the alternate Step 3b.</p>
+institution and click "Continue". Proceed to <a href="#3a-login-with-your-institutional-id">Step 3a</a>.</p>
+<p>Otherwise, click "Globus ID to sign in" and proceed to the alternate <a href="#3b-login-with-your-globus-id">Step 3b</a>.</p>
 <p><img alt="step2" src="../../img/screenshot_273.png" /></p>
-<h2 id="login-with-your-institutional-id">Login with your institutional ID</h2>
+<h3 id="3a-login-with-your-institutional-id">3a. Login with your institutional ID</h3>
 <p>You should be presented with a login page for your institutional ID, with your
-institution’s branding. Go ahead and sign-in now. Note that your password is not
-sent to the VC3 or Globus web portals. Continue to step 4.</p>
+institution’s branding. Go ahead and sign-in now. 
+<strong>Note that your password is not sent to the VC3 or Globus web portals</strong>. 
+Continue to <a href="#4-complete-or-update-your-vc3-profile">step 4</a>.</p>
 <p><img alt="step3a" src="../../img/screenshot_275.png" /></p>
-<h2 id="login-with-your-globus-id">Login with your Globus ID</h2>
-<p>(<em>Alternative step - if you do not have an institutional ID supported by Globus</em>)</p>
-<p>&lt;– Globus ID page –&gt;</p>
-<h2 id="complete-or-update-your-vc3-profile">Complete or update your VC3 profile</h2>
+<h3 id="3b-login-with-your-globus-id">3b. Login with your Globus ID</h3>
+<p>Once you have clicked on the "Globus ID to sign in" link, you will be presented with the page below. Please, proceed to log in if you already have a globus account, or click on the upper right link to create a new globus account.</p>
+<p><img alt="step3b" src="../../img/screenshot_275b.png" /></p>
+<p>If you are creating a new account, a short form to fill up will be shown next (see below).</p>
+<p><img alt="step3b1" src="../../img/screenshot_275c.png" /></p>
+<p>After you have completed this form, a confirmation e-mail with a verification code will be sent. Copy and paste such code and click on the "verify" button.</p>
+<p><img alt="step3b2" src="../../img/screenshot_275d.png" /></p>
+<p>After your account is verified, you will be presented with the page below. Click on "Continue" to finalize the sign up process.</p>
+<p><img alt="step3b3" src="../../img/screenshot_275e.png" /></p>
+<h3 id="4-complete-or-update-your-vc3-profile">4. Complete or update your VC3 profile</h3>
 <p>Once you have signed in, you’ll be asked to update or complete your VC3 profile
-with information such as your Institution and any other information we cannot
+with information such as your Institution and any other data we cannot
 directly extract from your Globus account. Click “Update Profile” once done.</p>
-<p><img alt="step4" src="../../img/screenshot_276.png" /></p>
-<h2 id="connect-an-allocation">Connect an Allocation</h2>
+<p>Note that other actions are not allowed until the profile is complete. </p>
+<p>The "SSH KEY" box can be used to upload your public ssh key. 
+This will allow you to access your future clusters in the VC3 infrastructure.
+Remeber: it is the <strong>public</strong> key what needs to be uploaded. </p>
+<p>If you do not have a public ssh key, 
+instructions to create it can be found in the link at the top-right corner. </p>
+<p><img alt="step4" src="../../img/01_profile_edit.png" /></p>
+<h3 id="5-connect-an-allocation">5. Connect an Allocation</h3>
 <p>After updating your profile, you can connect an allocation to the VC3 service.
 An allocation, in VC3, is defined as combination of a username and resource
 target that consumes some type of compute unit - regardless of whether it is
 billed as Service Units (many HPC centers), dollars (AWS, GCE), or priority
 (HTCondor and other opportunistic systems).</p>
 <p>Clicking My Allocations on the left shows all allocations currently associated
-with your account. You may select a new one by clicking Connect Allocation.</p>
-<p><img alt="step5" src="../../img/screenshot_277.png" /></p>
+with your account. You may select a new one by clicking the "New Allocation" button.</p>
+<p><img alt="step5" src="../../img/03_allocation_list.png" /></p>
 <p>You will be able to select a resource target from the drop down menu, and enter
 an account name for the resource. This is the same account name that you use to
 SSH to the remote system.</p>
-<p><img alt="step5a" src="../../img/screenshot_278.png" /></p>
-<p>Once you’ve connected your allocation, the system will validate it.</p>
-<p><img alt="step5b" src="../../img/screenshot_279.png" /></p>
-<p>In order to create a virtual cluster, the VC3 software needs to be able to SSH
-to the remote resource. If you click your allocation, you should see a section
-titled Public Token.</p>
-<p><img alt="step5c" src="../../img/screenshot_281.png" /></p>
-<p>You will need to add this token to your Unix account, in the file
-~/.ssh/authorized_keys. You can either edit this file with your favorite editor
-(such as nano, vim, or emacs), or use the echo command to append it to the
-authorized keys file.</p>
+<p><img alt="step5a" src="../../img/04_allocation_create.png" /></p>
+<p>In order to create a virtual cluster, the VC3 needs to be able to SSH
+to the remote resource. 
+Once you’ve connected your allocation, the system starts a process to validate it.</p>
+<p><img alt="step5b" src="../../img/05_allocation_ready.png" /></p>
+<p>Follow the instructions.
+You will be asked to login to the resource. 
+Once there, just copy and paste the command that is displayed in the box "step 3".</p>
+<p><img alt="step5c" src="../../img/06_allocation_prof.png" /></p>
 <p><img alt="step5d" src="../../img/screenshot_282.png" /></p>
 <p>This token allows the VC3 system to SSH into a cluster as yourself and submit
 jobs on your, or your project’s, behalf.</p>
-<h2 id="defining-a-project">Defining a Project</h2>
+<p>Once the ssh key has been placed in the resource, click on button "validate" (step 4).
+You will notice the progress bar at the top changes color to green with a message "Ready"
+when VC3 has complete the validation. Now the allocation is ready to be used. </p>
+<h3 id="6-defining-a-project">6. Defining a Project</h3>
 <p>VC3, as a platform for cooperative scientific computing, allows you create
 projects to share your allocations and virtual clusters with trusted members of
 your group, laboratory, or collaboration. To start a new project, click
 “Projects” on the sidebar, then click “+ New Project”.</p>
-<p><img alt="step6" src="../../img/screenshot_283.png" /></p>
-<p>You may give your project an aribtrary name and choose initial project members.
+<p><img alt="step6" src="../../img/07_project_list.png" /></p>
+<p>You may give your project an arbitrary name and choose initial project members.
+You are, by default, member of all your projects.
 Once finished, click “Create Project”.</p>
-<p><img alt="step6a" src="../../img/screenshot_284.png" /></p>
+<p><img alt="step6a" src="../../img/08_project_create.png" /></p>
 <p>You should be returned to the Projects page, where you will be able to see all
-of your projects and memberships.</p>
-<p><img alt="step6b" src="../../img/screenshot_285.png" /></p>
-<h2 id="creating-a-cluster-template">Creating a Cluster Template</h2>
+of your projects and memberships.
+You can access the configuration of each project in the table by clicking on its name.
+This way you can add or remove members and/or allocations to a given project.</p>
+<p><img alt="step6b" src="../../img/09_project_ready.png" /></p>
+<h3 id="7-creating-a-cluster-template">7. Creating a Cluster Template</h3>
 <p>VC3 allows users to create “Cluster Templates” that describe the components of
-their virtual cluster, including number of head nodes, worker nodes, etc. We
-currently support HTCondor and WorkQueue clusters with dynamic worker nodes,
+their virtual cluster, including the type of cluster, 
+number of head nodes, worker nodes, etc. 
+VC3 currently supports HTCondor and WorkQueue clusters with dynamic worker nodes,
 and fixed head nodes.</p>
-<p>To define a new template, click the “Cluster Templates” link on the left panel.
+<p>To define a new template, click the “Cluster Templates” link on the left panel, 
+and then click the "+New Cluster Template" button. 
 You’ll be able to give your cluster a name, select framework, and number of
-workers. Click “Define Cluster” to finish creating the template.</p>
-<p><img alt="step7" src="../../img/screenshot_286.png" /></p>
-<h2 id="resources">Resources</h2>
+workers. Click “Define Cluster Template” to finish creating the template.</p>
+<p>You should be returned to the Cluster Templates page, where you will be able to see all of your templates.
+You can access the configuration of each cluster template in the table by clicking on its name.</p>
+<p><img alt="step7" src="../../img/11_cluster_create.png" /></p>
+<h3 id="8-environments">8. Environments</h3>
+<p>An Enviroment is a collection of software packages to be included in a virtual cluster. 
+Click on "+New Environment" to create new ones. 
+From the "PACKAGE LIST" menu you can select one or more packages to be included in your new Enviroment.</p>
+<p>From the second menu you can choose, if needed, the Operative System. If the chosen Operative System
+is not available natively, the system will attempt to provide it via containers.
+Please, look into the <a href="https://www.virtualclusters.org/resource">resources page</a> to check if the
+resource you are planning to use with this environment has container options available in the 
+"features" section (E.g: singularity).</p>
+<p><img alt="step8" src="../../img/15_env1.png" /></p>
+<p>Once done, click on "Create New Enviroment" button.
+You should be returned to the Enviroments page, where you will be able to see all of your environments.
+You can access the configuration of each environment in the table by clicking on its name.</p>
+<h3 id="9-resources">9. Resources</h3>
 <p>The VC3 team curates an ever-expanding list of resources for end-users, with a
 focus on Campus Clusters, HPC centers, and Cloud resources. You can find these
 resources by clicking the “Resources” link on the left panel.</p>
 <p>You can also click an individual resource and see expanded information, such as
 batch system type, links to documentation, etc.</p>
-<h2 id="launching-a-virtual-cluster">Launching a Virtual Cluster</h2></div>
+<h3 id="10-launching-a-virtual-cluster">10. Launching a Virtual Cluster</h3>
+<p>Now that you have created a Project and associated at least one allocation to it,
+you are ready to create and launch your cluster.</p>
+<p>Click on the "New Virtual Cluster" button to start creating your new cluster.</p>
+<p>Click on "New Virtual Cluster" to create a new one. 
+Follow the steps. 
+First select a project from the menu and click "Next".
+Select a name for your new Virtual Cluster. Only letters, numbers, dashes and underscores are valid characters for the name of the cluster.</p>
+<p>Select a Cluster Template from the menu.</p>
+<p>Select an Enviroment. </p>
+<p>Select the Allocations you want to be used in this cluster. </p>
+<p>Finally select an expiration time for your cluster. Default value is 2 hours. </p>
+<p>When ready, click on "Launch Virtual Cluster"</p>
+<p><img alt="step9" src="../../img/12_vc_list.png" /></p>
+<p>You can then select the cluster template, environment (optional), project and allocation. Every user in your project will be able to log in to your virtual cluster submit node.</p>
+<p><img alt="step9a" src="../../img/13_vc_create.png" /></p>
+<p>After you have created your new virtual cluster, you will se in the list (as shown below), with the current state. You can click on the "Virtual Cluster States" information menu to see a diagram with the meaning of each state.</p>
+<p><img alt="step9b" src="../../img/14_vc_ready.png" /></p></div>
         </div>
 
         <footer class="col-md-12">

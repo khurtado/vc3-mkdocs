@@ -26,9 +26,9 @@ this will take you to a [Globus](https://globus.org) sign-in site.
 
 You will then be asked to sign in with your institutional identity, or your
 Globus ID. If you are using the former, simply type in the name of your
-institution and click "Continue". Proceed to [Step 3a](###3a.-Login-with-your-institutional-ID).
+institution and click "Continue". Proceed to [Step 3a](#3a-login-with-your-institutional-id).
 
-Otherwise, click "Globus ID to sign in" and proceed to the alternate Step 3b.
+Otherwise, click "Globus ID to sign in" and proceed to the alternate [Step 3b](#3b-login-with-your-globus-id).
 
 ![step2](../img/screenshot_273.png)
 
@@ -37,7 +37,7 @@ Otherwise, click "Globus ID to sign in" and proceed to the alternate Step 3b.
 You should be presented with a login page for your institutional ID, with your
 institution’s branding. Go ahead and sign-in now. 
 **Note that your password is not sent to the VC3 or Globus web portals**. 
-Continue to step 4.
+Continue to [step 4](#4-complete-or-update-your-vc3-profile).
 
 ![step3a](../img/screenshot_275.png)
 
@@ -59,7 +59,7 @@ After your account is verified, you will be presented with the page below. Click
 
 ![step3b3](../img/screenshot_275e.png)
 
-## Complete or update your VC3 profile
+### 4. Complete or update your VC3 profile
 
 Once you have signed in, you’ll be asked to update or complete your VC3 profile
 with information such as your Institution and any other data we cannot
@@ -77,7 +77,7 @@ instructions to create it can be found in the link at the top-right corner.
 
 ![step4](../img/01_profile_edit.png)
 
-## Connect an Allocation
+### 5. Connect an Allocation
 
 After updating your profile, you can connect an allocation to the VC3 service.
 An allocation, in VC3, is defined as combination of a username and resource
@@ -114,7 +114,11 @@ Once there, just copy and paste the command that is displayed in the box "step 3
 This token allows the VC3 system to SSH into a cluster as yourself and submit
 jobs on your, or your project’s, behalf.
 
-## Defining a Project
+Once the ssh key has been placed in the resource, click on button "validate" (step 4).
+You will notice the progress bar at the top changes color to green with a message "Ready"
+when VC3 has complete the validation. Now the allocation is ready to be used. 
+
+### 6. Defining a Project
 
 VC3, as a platform for cooperative scientific computing, allows you create
 projects to share your allocations and virtual clusters with trusted members of
@@ -124,16 +128,19 @@ your group, laboratory, or collaboration. To start a new project, click
 ![step6](../img/07_project_list.png)
 
 You may give your project an arbitrary name and choose initial project members.
+You are, by default, member of all your projects.
 Once finished, click “Create Project”.
 
 ![step6a](../img/08_project_create.png)
 
 You should be returned to the Projects page, where you will be able to see all
 of your projects and memberships.
+You can access the configuration of each project in the table by clicking on its name.
+This way you can add or remove members and/or allocations to a given project.
 
 ![step6b](../img/09_project_ready.png)
 
-## Creating a Cluster Template
+### 7. Creating a Cluster Template
 
 VC3 allows users to create “Cluster Templates” that describe the components of
 their virtual cluster, including the type of cluster, 
@@ -141,13 +148,37 @@ number of head nodes, worker nodes, etc.
 VC3 currently supports HTCondor and WorkQueue clusters with dynamic worker nodes,
 and fixed head nodes.
 
-To define a new template, click the “Cluster Templates” link on the left panel.
+To define a new template, click the “Cluster Templates” link on the left panel, 
+and then click the "+New Cluster Template" button. 
 You’ll be able to give your cluster a name, select framework, and number of
 workers. Click “Define Cluster Template” to finish creating the template.
 
+You should be returned to the Cluster Templates page, where you will be able to see all of your templates.
+You can access the configuration of each cluster template in the table by clicking on its name.
+
+
 ![step7](../img/11_cluster_create.png)
 
-## Resources
+### 8. Environments
+
+An Enviroment is a collection of software packages to be included in a virtual cluster. 
+Click on "+New Environment" to create new ones. 
+From the "PACKAGE LIST" menu you can select one or more packages to be included in your new Enviroment.
+
+From the second menu you can choose, if needed, the Operative System. If the chosen Operative System
+is not available natively, the system will attempt to provide it via containers.
+Please, look into the [resources page](https://www.virtualclusters.org/resource) to check if the
+resource you are planning to use with this environment has container options available in the 
+"features" section (E.g: singularity).
+
+![step8](../img/15_env1.png)
+
+Once done, click on "Create New Enviroment" button.
+You should be returned to the Enviroments page, where you will be able to see all of your environments.
+You can access the configuration of each environment in the table by clicking on its name.
+
+
+### 9. Resources
 
 The VC3 team curates an ever-expanding list of resources for end-users, with a
 focus on Campus Clusters, HPC centers, and Cloud resources. You can find these
@@ -156,11 +187,35 @@ resources by clicking the “Resources” link on the left panel.
 You can also click an individual resource and see expanded information, such as
 batch system type, links to documentation, etc.
 
-## Launching a Virtual Cluster
+
+### 10. Launching a Virtual Cluster
 
 Now that you have created a Project and associated at least one allocation to it,
-you are ready to create and launch your clusters.
+you are ready to create and launch your cluster.
+
+Click on the "New Virtual Cluster" button to start creating your new cluster.
+
+Click on "New Virtual Cluster" to create a new one. 
+Follow the steps. 
+First select a project from the menu and click "Next".
+Select a name for your new Virtual Cluster. Only letters, numbers, dashes and underscores are valid characters for the name of the cluster.
+
+Select a Cluster Template from the menu.
+
+Select an Enviroment. 
+
+Select the Allocations you want to be used in this cluster. 
+
+Finally select an expiration time for your cluster. Default value is 2 hours. 
+
+When ready, click on "Launch Virtual Cluster"
 
 ![step9](../img/12_vc_list.png)
+
+You can then select the cluster template, environment (optional), project and allocation. Every user in your project will be able to log in to your virtual cluster submit node.
+
 ![step9a](../img/13_vc_create.png)
+
+After you have created your new virtual cluster, you will se in the list (as shown below), with the current state. You can click on the "Virtual Cluster States" information menu to see a diagram with the meaning of each state.
+
 ![step9b](../img/14_vc_ready.png)
